@@ -1,38 +1,96 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Open+Sans&family=PT+Sans&family=Raleway:wght@900&family=Source+Sans+Pro:wght@300;400&display=swap");
+
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 125%;
+}
+body {
+  margin: 0;
+
+  font-family: "Merriweather Sans";
+}
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+  border: none;
+  font-size: 100%;
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+:focus {
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header,
+.footer {
+  background-color: #03989e;
+  color: #ffffff;
+}
+
+/* header styling */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+.header {
+  padding: 100px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.socials {
+  border-top: 2px solid #ffffff;
+  margin-top: 50px;
+  padding-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.socials a {
+  padding: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.socialIcon {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
