@@ -252,3 +252,11 @@ form input {
 .hideProfile {
   visibility: hidden;
 }
+
+/* media queries  */
+
+@media only screen and (max-width: 576px) {
+  .header {
+    padding: 50px;
+  }
+}
