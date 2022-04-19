@@ -10,7 +10,8 @@ html {
 }
 body {
   margin: 0;
-
+  position: relative;
+  min-height: 100vh;
   font-family: "Merriweather Sans";
 }
 article,
@@ -84,7 +85,6 @@ button:hover {
 }
 
 * {
-  margin: 0;
   padding: 0;
 }
 
@@ -97,6 +97,11 @@ button:hover {
 .wrapper {
   width: 90%;
   margin: 0 auto;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
 }
 
 li {
@@ -115,6 +120,15 @@ h1 {
 .header {
   padding: 100px;
   text-align: center;
+}
+
+.headerSubmitted {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerSubmitted h2 {
+  color: white;
 }
 
 .socials {
@@ -214,19 +228,27 @@ form input {
 }
 
 /* footer styling  */
+
 .footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 20px;
-}
-
-.footer input {
-  width: 50%;
+  padding: 20px 0;
+  width: 100%;
+  position: absolute;
+  left: 0;
 }
 
 /* list that gets highlighted when clicked */
 .highlighted {
   background-color: #03989e;
   color: white;
+}
+
+.showProfile {
+  visibility: visible;
+}
+
+.hideProfile {
+  visibility: hidden;
 }
