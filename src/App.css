@@ -22,6 +22,20 @@ section {
   display: block;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 button,
 input,
 optgroup,
@@ -29,6 +43,8 @@ select,
 textarea {
   font-family: sans-serif;
   line-height: 1.15;
+  font-size: 100%;
+  padding: 20px;
   margin: 0;
 }
 
@@ -37,6 +53,11 @@ input {
   overflow: visible;
   border: none;
   font-size: 100%;
+}
+
+input {
+  padding: 20px;
+  border: 1px solid #03989e;
 }
 
 button,
@@ -116,7 +137,7 @@ h1 {
   margin: 40px auto;
 }
 
-.experiences h2 {
+h2 {
   border-bottom: 2px solid #03989e;
   display: inline-block;
 }
@@ -149,6 +170,59 @@ h1 {
 .experiences li:hover {
   border: 2px solid #04cad1;
   cursor: pointer;
+}
+
+/* skills component styling */
+.skillsContainer {
+  text-align: center;
+}
+
+.skillsList {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.skillsContainer {
+  width: 50%;
+}
+
+.skillsContainer h3 {
+  margin: 40px 0;
+}
+
+.skillsContainer li {
+  padding: 5px;
+}
+
+/* contact form */
+
+.contact {
+  margin: 40px auto;
+}
+
+.contact h2 {
+  margin: 20px auto;
+}
+form {
+  padding: 20px;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+form input {
+  flex-grow: 1;
+}
+
+/* footer styling  */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.footer input {
+  width: 50%;
 }
 
 /* list that gets highlighted when clicked */
