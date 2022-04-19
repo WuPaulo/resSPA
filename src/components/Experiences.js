@@ -2,62 +2,67 @@ import React from "react";
 import { useState } from "react";
 
 const Experiences = () => {
-  const [active, setActive] = useState(false);
+  const [activeOne, setActiveOne] = useState("false");
+  const [activeTwo, setActiveTwo] = useState("false");
+  const [activeThree, setActiveThree] = useState("false");
+
   return (
-    <div>
-      <h2>Work Experience</h2>
+    <div className="experiences wrapper">
+      <h2>Work Experiences</h2>
       <ul>
-        <li>
-          <h3>
-            Sales enginer{" "}
+        <li
+          onClick={() => setActiveOne(!activeOne)}
+          className={!activeOne ? "highlighted" : null}
+        >
+          <div className="expriencesTitle">
+            <h3>Sales enginer </h3>
             <span> AFTIA solutions | Jul 2021 - November 2021</span>
-          </h3>
-          <ul>
-            <li>
-              Articulated and educate on business, technical and architectural
-              concepts to a variety of audiences such as business users,
-              developers, architects, IT operations, and senior management.
-            </li>
-            <li>
-              Developed forms solution and adobe sign documents with AEM forms
-              and Adobe Sign.
-            </li>
-          </ul>
+          </div>
+          <p>
+            Articulated and educate on business, technical and architectural
+            concepts to a variety of audiences such as business users,
+            developers, architects, IT operations, and senior management.
+          </p>
+          <p>
+            Developed forms solution and adobe sign documents with AEM forms and
+            Adobe Sign.
+          </p>
         </li>
-        <li>
-          <h3>
-            Vice President Of Technology{" "}
+        <li
+          onClick={() => setActiveTwo(!activeTwo)}
+          className={!activeTwo ? "highlighted" : null}
+        >
+          <div className="expriencesTitle">
+            <h3>Vice President Of Technology </h3>
             <span>
               Laurier Investment & Finance Association | Sep 2018 - Apr 2020
             </span>
-          </h3>{" "}
-          <ul>
-            <li>
-              Developed a website through WordPress to outreach to other schools
-              and companies by outsourcing domain with cPanel to reach more
-              students and interaction
-            </li>
-            <li>
-              Marketed several club events through the use of social media ,
-              resulting in exceeding target event attendees
-            </li>
-          </ul>
-          <span>
-            Laurier Investment & Finance Association | Sep 2018 - Apr 2020
-          </span>
+          </div>
+
+          <p>
+            Developed a website through WordPress to outreach to other schools
+            and companies by outsourcing domain with cPanel to reach more
+            students and interaction
+          </p>
+          <p>
+            Marketed several club events through the use of social media ,
+            resulting in exceeding target event attendees
+          </p>
         </li>
-        <li>
-          <h3>
-            Sales And Marketing Specialist{" "}
+        {}
+        <li
+          onClick={() => setActiveThree(!activeThree)}
+          className={!activeThree ? "highlighted" : null}
+        >
+          <div className="expriencesTitle">
+            <h3>Sales And Marketing Specialist </h3>
             <span>Student Works Management Program | Apr 2016 - Apr 2017</span>
-          </h3>
-          <ul>
-            <li>
-              Identified marketing strategies by seeking potential sales and
-              identifying the needs of clients by providing excellent results,
-              leading increasing sales and customer satisfaction
-            </li>
-          </ul>
+          </div>
+          <p>
+            Identified marketing strategies by seeking potential sales and
+            identifying the needs of clients by providing excellent results,
+            leading increasing sales and customer satisfaction
+          </p>
         </li>
       </ul>
     </div>

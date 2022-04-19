@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Open+Sans&family=PT+Sans&family=Raleway:wght@900&family=Source+Sans+Pro:wght@300;400&display=swap");
 
+/* general styling/ boilerplate  */
+
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -71,6 +73,19 @@ button:hover {
   color: #ffffff;
 }
 
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+h2 {
+  color: #03989e;
+}
+
 /* header styling */
 h1 {
   font-size: 3rem;
@@ -92,5 +107,52 @@ h1 {
 }
 
 .socialIcon {
+  color: white;
+}
+
+/* expreince styling */
+
+.experiences {
+  margin: 40px auto;
+}
+
+.experiences h2 {
+  border-bottom: 2px solid #03989e;
+  display: inline-block;
+}
+
+.experiences h3 {
+  margin-bottom: 10px;
+}
+
+.experiences p {
+  padding-top: 10px;
+}
+
+.experiences span {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.experiences li {
+  border: 2px solid #03989e;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.expriencesTitle {
+  border-bottom: 1px solid #03989e;
+  display: flex;
+  justify-content: space-between;
+}
+
+.experiences li:hover {
+  border: 2px solid #04cad1;
+  cursor: pointer;
+}
+
+/* list that gets highlighted when clicked */
+.highlighted {
+  background-color: #03989e;
   color: white;
 }
