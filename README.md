@@ -1,5 +1,4 @@
 
-[live link](https://wupaulo.github.io/resSPA/)
 
 # Getting Started with Create React App
 
