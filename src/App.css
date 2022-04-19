@@ -112,6 +112,10 @@ h2 {
   color: #03989e;
 }
 
+:focus {
+  border-bottom: black 1px solid;
+}
+
 /* header styling */
 h1 {
   font-size: 3rem;
@@ -179,6 +183,7 @@ h2 {
   border-bottom: 1px solid #03989e;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .experiences li:hover {
@@ -254,6 +259,12 @@ form input {
 }
 
 /* media queries  */
+
+@media only screen and (max-width: 768px) {
+  .expriencesTitle {
+    flex-direction: column;
+  }
+}
 
 @media only screen and (max-width: 576px) {
   .header {
